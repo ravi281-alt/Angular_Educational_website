@@ -1,0 +1,400 @@
+[
+    {
+        "Masters" : [
+
+            {
+                "course_id" : 1,
+                "course_name" : "Data Science with AI and AWS",
+                "duration" : "12 Months",
+                "mode_training" : "Online",
+                "fees" : 150000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 370,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                    {
+                        "cs": "Telecom Customer Def Dection Analysis"                        
+                    },
+                    {
+                        "cs": "Twitter Data Analysis"                        
+                    },
+                    {
+                        "cs": "Image Recognition"                        
+                    },
+                    {
+                        "cs": "Movie Recommender"                        
+                    },
+                    {
+                        "cs": "Stock Market Analysis"                        
+                    },
+                    {
+                        "cs": "Credit Card Fraud Detection"                        
+                    },
+                    {
+                        "cs": "Insurance Claim Detection"                        
+                    }
+               ]
+             },
+             {
+                "course_id" : 2,
+                "course_name" : "Bussiness Data Analytics",
+                "duration" : "8 Months",
+                "mode_training" : "Offline",
+                "fees" : 200000,
+                "img" : "assets/img/course2.jpg",
+                "training" : 330,
+                "hiring" : 250,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                    {
+                        "cs": "Telecom Customer Def Dection Analysis"                        
+                    },
+                    {
+                        "cs": "Twitter Data Analysis"                        
+                    },
+                    {
+                        "cs": "Image Recognition"                        
+                    },
+                    {
+                        "cs": "Movie Recommender"                        
+                    },
+                    {
+                        "cs": "Stock Market Analysis"                        
+                    },
+                    {
+                        "cs": "Credit Card Fraud Detection"                        
+                    },
+                    {
+                        "cs": "Insurance Claim Detection"                        
+                    }
+               ]
+             },
+             {
+                "course_id" : 3,
+                "course_name" : "Full Stack Web Development",
+                "duration" : "12 Months",
+                "mode_training" : "Online",
+                "fees" : 120000,
+                "img" : "assets/img/course3.jpg",
+                "training" : 450,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                    {
+                        "cs": "Web Portfolio For Job Interview"                        
+                    },
+                    {
+                        "cs": "E-Commerce Website"                        
+                    },
+                    {
+                        "cs": "Real Estate Website"                        
+                    },
+                    {
+                        "cs": "To Do List Application"                        
+                    },
+                    {
+                        "cs": "Event Manager Application"                        
+                    },
+                    {
+                        "cs": "Net Banking Application"                        
+                    },
+                    {
+                        "cs": "To Do List Web Based Application"                        
+                    },
+                    {
+                        "cs": "Income VS Expenditure Management Application"                        
+                    }
+               ]
+             },
+             {
+                "course_id" : 4,
+                "course_name" : "AWS & Azure Course Training",
+                "duration" : "10 Months",
+                "mode_training" : "Online",
+                "fees" : 150000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 200,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                    {
+                        "cs": "Operational Support Engineer"                        
+                    },
+                    {
+                        "cs": "Cloud Software Engineer"                        
+                    },
+                    {
+                        "cs": "Solution Architect"                        
+                    },
+                    {
+                        "cs": "DevOps Engineer"                        
+                    },
+                    {
+                        "cs": "Cloud Developer"                        
+                    },
+                    {
+                        "cs": "Telecom Customer Def Dection Analysis"                        
+                    },
+                    {
+                        "cs": "Twitter Data Analysis"                        
+                    }
+               ]
+             }
+        ]
+    },
+    {
+        "Post" : [
+
+            {
+                "course_id" : 5,
+                "course_name" : "Data Science",
+                "Duration" : "6 Months",
+                "mode_training" : "Online",
+                "Fees" : 90000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 150,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                    {
+                        "cs": "Netfilx Data Analysis"                        
+                    },
+                    {
+                        "cs": "Boston Housing Price"                        
+                    },
+                    {
+                        "cs": "Mall Customer Segmentation"                        
+                    },
+                    {
+                        "cs": "Insurance Claim Prediction"                        
+                    },
+                    {
+                        "cs": "Telecom Churn"                        
+                    },
+                    {
+                        "cs": "People Coubting Robot"                        
+                    },
+                    {
+                        "cs": "Face Detection"                        
+                    },
+                    {
+                        "cs": "Instagram Face Mask Application"                        
+                    },
+                    {
+                        "cs": "Cars 24 second Hand car Price"                        
+                    }
+               ]
+            },
+            {
+                "course_id" : 6,
+                "course_name" : "Data Analytics",
+                "Duration" : "6 Months",
+                "mode_training" : "Online",
+                "Fees" : 80000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 200,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                    {
+                        "cs": "Retail Data Analytics"                        
+                    },
+                    {
+                        "cs": "Twitter Data Analysis"                        
+                    },
+                    {
+                        "cs": "Startup insight through data analysis"                        
+                    },
+                    {
+                        "cs": "Market Based Analysis For Consumer "                        
+                    },
+                    {
+                        "cs": "Insurance Claim Analytics"                        
+                    },
+                    {
+                        "cs": "Covid-19 Forcasting"                        
+                    },
+                    {
+                        "cs": "Lead Scoring"                        
+                    }
+               ]
+            },
+            {
+                "course_id" : 7,
+                "course_name" : "Python Development",
+                "Duration" : "8 Months",
+                "mode_training" : "Offline",
+                "Fees" : 60000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 250,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                     {
+                        "cs": "Credit Card Fraud Detection"                        
+                    },
+                    {
+                        "cs": "Uber Ride Data Analytics"                        
+                    },
+                    {
+                        "cs": "Net Banking Application"                        
+                    },
+                    {
+                        "cs": "To Do List Web Based Application"                        
+                    },
+                    {
+                        "cs": "Web Portfolio For Job Interview"                        
+                    },
+                    {
+                        "cs": "E-Commerce Website"                        
+                    },
+                    {
+                        "cs": "Real Estate Website"                        
+                    }
+               ]
+            },
+            {
+                "course_id" : 8,
+                "course_name" : "Java Development",
+                "Duration" : "6 Months",
+                "mode_training" : "Offline",
+                "Fees" : 70000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 230,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                     {
+                        "cs": "To Do List Web Based Application"                        
+                    },
+                    {
+                        "cs": "E-Commerce Website"                        
+                    },
+                    {
+                        "cs": "Event Manager Application"                        
+                    },
+                    {
+                        "cs": "Income VS Expenditure Management Application"                        
+                    }
+               ]
+            },
+            {
+                "course_id" : 9,
+                "course_name" : "PHP Development",
+                "Duration" : "5 Months",
+                "mode_training" : "Offline",
+                "Fees" : 70000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 210,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                    {
+                        "cs": "To Do List Web Based Application"                        
+                    },
+                    {
+                        "cs": "E-Commerce Website"                        
+                    },
+                    {
+                        "cs": "Blogging Website"                        
+                    }
+               ]
+            },
+            {
+                "course_id" : 10,
+                "course_name" : "Dot Net Development",
+                "Duration" : "6 Months",
+                "mode_training" : "Offline",
+                "Fees" : 80000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 300,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                     {
+                        "cs": "E-Commerce Website"                        
+                    },
+                    {
+                        "cs": "Web Portfolio For Job Interview"                        
+                    },
+                    {
+                        "cs": "Real Estate Website"                        
+                    },
+                    {
+                        "cs": "To Do List Console Application"                        
+                    },
+                    {
+                        "cs": "Video Library Management"                        
+                    }
+               ]
+            },
+            {
+                "course_id" : 11,
+                "course_name" : "Mean Stack Development",
+                "Duration" : "8 Months",
+                "mode_training" : "Online",
+                "Fees" : 60000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 200,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 1000,
+               "case_studies" : [
+                     {
+                        "cs": "Chat Application"                        
+                    },
+                    {
+                        "cs": "E-Commerce Website"                        
+                    },
+                    {
+                        "cs": "Web Portfolio For Job Interview"                        
+                    },
+                    {
+                        "cs": "Real Estate Website"                        
+                    }
+               ]
+            },
+            {
+                "course_id" : 12,
+                "course_name" : "Digital Marketting",
+                "Duration" : "6 Months",
+                "mode_training" : "Offline",
+                "Fees" : 50000,
+                "img" : "assets/img/course1.jpg",
+                "training" : 200,
+                "hiring" : 500,
+                "salary" : 12.5,
+                "student_trained" : 7000,
+               "case_studies" : [
+                     {
+                        "cs": "E-Commerce Website"                        
+                    },
+                    {
+                        "cs": "Web Portfolio For Job Interview"                        
+                    },
+                    {
+                        "cs": "Real Estate Website"                        
+                    },
+                    {
+                        "cs": "To Do List Console Application"                        
+                    },
+                    {
+                        "cs": "Video Library Management"                        
+                    }
+                     
+               ]
+            }
+        ]
+    }
+]

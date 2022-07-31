@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg " style="background-color: #B0CB1F;">
+    <div class="container-fluid">
+             
+        <a class="navbar-brand fs-4 text-light shadow-lg" [routerLink]="['/home']">&nbsp;
+            <i class="bi bi-laptop" ></i> &nbsp;&nbsp;Ravi Tutorials&nbsp;&nbsp;</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <ul class="nav justify-content-center collapse navbar-collapse navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item ">
+                <a class="nav-link active fs-5 shadow-lg" [routerLink]="['/home']" aria-current="page">Home </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link active fs-5 shadow-lg" aria-current="page" >&nbsp; </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-5 shadow-lg" [routerLink]="['/course']" aria-current="page">Course </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link active fs-5 shadow-lg" aria-current="page" >&nbsp; </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-5 shadow-lg" [routerLink]="['/about']" aria-current="page">About Us </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link active fs-5 shadow-lg" aria-current="page" >&nbsp; </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-5 shadow-lg" [routerLink]="['/contacts']" aria-current="page">Contact US </a>
+            </li>
+
+        </ul>
+        
+       
+                
+    </div>
+</nav>
+<!-- <app-home></app-home> -->
+<router-outlet></router-outlet>
+<app-footer></app-footer>

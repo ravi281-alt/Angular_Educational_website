@@ -1,0 +1,205 @@
+<!-- <p>course-detail works!</p> -->
+
+<div *ngIf="fetched_course$ | async as cours; else noCourse">
+    <!-- {{cours|json}} -->
+  
+    <div class="container-fluid mb-2" style="background-color: #343432;">
+  
+      <div class="row">
+        <div class="col-6">
+          <h1 class="text-center mt-5 mb-4" style="color: #B0CB1F;">
+            {{cours.course_name}}
+          </h1>
+          <h4 class="text-center text-white mb-2">
+            Thane <span style="color: #B0CB1F;">|</span>
+            Diva <span style="color: #B0CB1F;">|</span>
+            Mulund <span style="color: #B0CB1F;">|</span>
+            Dombivali <span style="color: #B0CB1F;">|</span>
+            Ghatkopar <span style="color: #B0CB1F;">|</span>
+            Kalyan <span style="color: #B0CB1F;">|</span>
+            Mulund <span style="color: #B0CB1F;">|</span>
+            Dombivali <span style="color: #B0CB1F;">|</span>
+            Thane <span style="color: #B0CB1F;">|</span>
+            Thane <span style="color: #B0CB1F;">|</span>
+          </h4>
+          <h4 class="text-center text-white mb-5"> Weekdays & Weekend Batch</h4>
+        </div>
+        <div class="col-6">
+  
+        </div>
+      </div>
+  
+    </div>
+  
+  
+    <!-- counter up start -->
+    <div class="container mt-5 mb-5">
+      <div class="row ">
+        <div class="col-6 col-lg-3"><br>
+          <div class="card text-center shadow-lg ">
+            <img src="../../assets/img/Training-hours.png" height="100px" class=" center card-img-top mt-4" alt="...">
+            <div class="card-title mb-4">
+              <h5 class="text-muted">{{cours.training}} Hrs </h5>
+              <h6 class="text-muted">Training Conducted</h6>
+            </div>
+          </div>&nbsp;
+        </div>
+        <div class="col-6 col-lg-3"><br>
+          <div class="card text-center shadow-lg ">
+            <img src="../../assets/img/activelearners.png" height="100px" class=" center card-img-top mt-4" alt="...">
+            <div class="card-title mb-4">
+              <h5 class="text-muted">{{cours.student_trained}}+ </h5>
+              <h6 class="text-muted">Student Trained</h6>
+            </div>
+          </div>&nbsp;
+        </div>
+        <div class="col-6 col-lg-3 "><br>
+          <div class="card text-center shadow-lg ">
+            <img src="../../assets/img/tieups.png" height="100px" class=" center card-img-top mt-4" alt="...">
+            <div class="card-title mb-4">
+              <h5 class="text-muted">{{cours.hiring}}+ </h5>
+              <h6 class="text-muted">Hiring Companies</h6>
+            </div>
+          </div>&nbsp;
+        </div>
+        <div class="col-6 col-lg-3 "><br>
+          <div class="card text-center  shadow-lg ">
+            <img src="../../assets/img/salarydrawn.png" height="100px" class=" center card-img-top mt-4" alt="...">
+            <div class="card-title mb-4">
+              <h5 class="text-muted">{{cours.salary}} L.P.A </h5>
+              <h6 class="text-muted">Average Salaries</h6>
+            </div>
+          </div>&nbsp;
+        </div>
+      </div>
+    </div>
+    <!-- counter up end -->
+    <hr>
+  
+    <!-- case Studies start -->
+    <!-- <div class="container mt-3">
+      <div class="row mb-3 text-muted">
+        <h2>
+          Case Studies
+        </h2>
+      </div>
+      <div class="" *ngFor="let course_stud of cours.case_studies">
+        <div class="col-4">
+          <ol class="list-group list-group">
+            <li class="list-group-item"> {{course_stud.cs}}</li>
+          </ol>
+        </div>
+      </div>
+    </div> -->
+  
+    <!-- case Studies end -->
+  
+  <!-- Course details start -->
+    <div class="container mb-4">
+      <div class="row">
+        <h2 class="text-muted">
+          Course Overview
+        </h2>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-4 col-md-6"></div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card  card-body" style="border-color: #B0CB1F;">
+            <div style="background-color: #343432;">
+                <h5 class="text-center mt-2 card-title" style="background-color: #343432; Color:#B0CB1F">
+                    <b>{{cours.course_name|uppercase}}</b>
+                </h5>
+            </div>
+            <div class="row mt-2 mb-2">
+                <div class="col-2">
+                    <img src="../../assets/img/duration.png" height="40" class="mt-2 center" />
+                </div>
+                <div class="col-10">
+                    <b class="text-muted">Durations</b><br>
+                    <small>{{cours.Duration}}</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-2">
+                    <img src="../../assets/img/mode-of-training.png" height="40" class="mt-2 center" />
+                </div>
+                <div class="col-10">
+                    <b class="text-muted">Mode Of Training</b><br>
+                    <small>{{cours.mode_training}}</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-2">
+                    <img src="../../assets/img/appointment.png" height="40" class="mt-2 center" />
+                </div>
+                <div class="col-10">
+                    <b class="text-muted">Fees</b><br>
+                    <small>{{cours.Fees}}</small>
+                </div>
+            </div>
+            <hr>
+            <h5 class="text-muted">Overview</h5>
+            <ul class="text-light-font">
+                <li>Develop Credit Card Fraud Detection project in ML</li>
+                <li>Visualize daily COVID-19 trend using Pandas.</li>
+                <li>Sign Langauge Detection using Computer Vision</li>
+                <li>Develop a business centric Chatbot using NLP</li>
+                <li>Develop Movie Recommender system like Netflix</li>
+                <li>Stock Market Forecasting using Time series Analysis</li>
+            </ul>
+            
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6"></div>
+      
+      </div>
+    </div>
+  <hr>
+  <!--  Course details end -->
+  
+  <!-- case studies start  -->
+  <div class="container mb-5">
+    <div class="row">
+      <h2 class="text-muted">
+        Case Studies
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6"></div>
+    <div class="col-lg-4 col-md-6  text-center mt-3">
+      <div class="" *ngFor="let course_stud of cours.case_studies">
+        <ol class="list-group list-group " style="border-style :solid;border-color: #B0CB1F;">
+          <li class="list-group-item"> {{course_stud.cs}}</li>
+        </ol>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+  
+  <hr>
+  <!-- case studies end -->
+  
+  <!-- Our Training Process start -->
+  <div class="container">
+    <div class="row mt-5 mb-5">
+      <div class="col-12">
+        <h2 class="text-muted section-title">Our Training Process</h2>
+      </div>
+      <div class="col-12 mt-5">
+        <img src="../../assets/img/training_process_desktop.png" class="img-fluid pt-3 pb-5" alt="training-process" />
+      </div>
+  
+    </div>
+  </div>
+  
+  <!-- Our Training Process end -->
+  
+  </div>
+  
+  
+  <ng-template #noCourse>
+    <h1>No Courses available for this id</h1>
+  </ng-template>

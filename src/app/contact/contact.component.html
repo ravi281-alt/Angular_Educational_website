@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-6  mt-5">
+            <h2>Contact US !!!</h2>
+            <form class="mt-3" [formGroup]="contactform">
+
+                <label for="name" class="form-label">Name : </label>
+                <input type="text" name="name" id="name" class="form-control mb-3" formControlName="name">
+
+                <div id="emailHelp" class="form-text text-danger mb-3" *ngIf="name.invalid && name.dirty">
+                    <span *ngIf="name.errors!['minlength']"> Plzz Enter Proper Name</span>
+                    <!-- Plzz Enter Proper Details -->
+                </div>
+
+                <label for="email" class="form-label">Email : </label>
+                <input type="email" name="email" id="email" class="form-control mb-3" formControlName="email">
+
+                <div id="emailHelp" class="form-text text-danger mb-3" *ngIf="email.invalid && email.dirty">
+                    <span *ngIf="email.errors!['email']"> Plzz Enter Proper email</span>
+                </div>
+
+                <label for="tel" class="form-label">Mobile Number : </label>
+                <input type="number" name="tel" id="tel" class="form-control mb-3" formControlName="number">
+
+                <div id="emailHelp" class="form-text text-danger mb-3" *ngIf="number.invalid && number.dirty">
+
+                    <span *ngIf="number.errors!['required']">Plzz Enter Phone Number</span>
+                    <span *ngIf="number.errors!['pattern']">Phone Number Must be of 10 Numbers</span>
+                </div>
+
+                <label class="form-label">Remarks : </label>
+                <input type="textarea" name="name" id="name" class="form-control mb-3" formControlName="remarks">
+
+                <button class="btn btn-primary" [disabled]="contactform.invalid" type="submit">Submit</button>
+                <!-- {{contactform.value|json}} -->
+
+            </form>
+        </div>
+        <div class="col-12 col-lg-6 center mt-5">
+            <h2 class="ms-5">Subscribe Our channel !!!</h2>
+            <iframe class="ms-5 mt-4"
+                width="560" height="315" src="https://www.youtube.com/embed/AipfoVaCtmg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+    </div>
+    <hr class="mt-5">
+    <div class="row mt-5">
+        <div class="col-12">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15485.351564961498!2d73.05233364999998!3d19.18216135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1658129467099!5m2!1sen!2sin"
+                width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>

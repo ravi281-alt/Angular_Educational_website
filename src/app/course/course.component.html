@@ -1,0 +1,192 @@
+<div class="container-fluid mb-2" style="background-color: #343432;">
+
+    <div class="row">
+        <div class="col-6">
+            <h1 class="text-center mt-5 mb-4" style="color: #B0CB1F;">
+                Software Engineer
+            </h1>
+            <h4 class="text-center text-white mb-2">
+                Thane <span style="color: #B0CB1F;">|</span>
+                Diva <span style="color: #B0CB1F;">|</span>
+                Mulund <span style="color: #B0CB1F;">|</span>
+                Dombivali <span style="color: #B0CB1F;">|</span>
+                Ghatkopar <span style="color: #B0CB1F;">|</span>
+                Kalyan <span style="color: #B0CB1F;">|</span>
+                Mulund <span style="color: #B0CB1F;">|</span>
+                Dombivali <span style="color: #B0CB1F;">|</span>
+                Thane <span style="color: #B0CB1F;">|</span>
+                Thane <span style="color: #B0CB1F;">|</span>
+            </h4>
+            <h4 class="text-center text-white mb-5"> Weekdays & Weekend Batch</h4>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-5">{{searchByName}}</div>
+                <div class="col-6 ms-4  mt-5">
+                    <form class="d-flex mt-5 " center role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search By CourseName" (input)="filterbyCoursename($event)" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- master Certification programme Start -->
+<section class=" container mt-2">
+    <div class="row mt-5 mb-3">
+        <div class="col-12">
+            <h2 class="text-muted">
+                Master Certification Program
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row" *ngFor="let course of courses">
+            <div class="col-lg-4 mb-4" *ngFor="let master of course.Masters">
+                <div class="card card-body" style="border-color: #B0CB1F;">
+                    <div style="background-color: #343432;">
+                        <h5 class="text-center mt-2 card-title" style="background-color: #343432; Color:#B0CB1F">
+                            <b>{{master.course_name|uppercase}}</b>
+                        </h5>
+                    </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="col-2">
+                            <img src="../../assets/img/duration.png" height="40" class="mt-2 center" />
+                        </div>
+                        <div class="col-10">
+                            <b class="text-muted">Durations</b><br>
+                            <small>{{master.duration}}</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../assets/img/mode-of-training.png" height="40" class="mt-2 center" />
+                        </div>
+                        <div class="col-10">
+                            <b class="text-muted">Mode Of Training</b><br>
+                            <small>{{master.mode_training}}</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../assets/img/appointment.png" height="40" class="mt-2 center" />
+                        </div>
+                        <div class="col-10">
+                            <b class="text-muted">Fees</b><br>
+                            <small>{{master.fees}}</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="text-muted">Overview</h5>
+                    <ul class="text-light-font">
+                        <li>Develop Credit Card Fraud Detection project in ML</li>
+                        <li>Visualize daily COVID-19 trend using Pandas.</li>
+                        <li>Sign Langauge Detection using Computer Vision</li>
+                        <li>Develop a business centric Chatbot using NLP</li>
+                        <li>Develop Movie Recommender system like Netflix</li>
+                        <li>Stock Market Forecasting using Time series Analysis</li>
+                    </ul>
+                    <div>
+                        <button [routerLink]="['/course',master.course_id]" type="button"
+                            style="background-color:#BAD23B ; color:#343432"
+                            class="btn text-muted btm-outline-danger btn-large">
+                            <b> Course Details </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- master certification program end  -->
+
+<!-- Post Certification programme Start -->
+<section class=" container mt-2">
+    <hr>
+    <div class="row mt-5 mb-3">
+        <div class="col-12">
+            <h2 class="text-muted">
+                PG Certification Program
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row" *ngFor="let course of courses">
+            <div class="col-lg-4 mb-4" *ngFor="let post of course.Post">
+                <div class="card card-body" style="border-color: #B0CB1F;">
+                    <div style="background-color: #343432;">
+                        <h5 class="text-center mt-2 card-title" style="background-color: #343432; Color:#B0CB1F">
+                            <b>{{post.course_name|uppercase}}</b>
+                        </h5>
+                    </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="col-2">
+                            <img src="../../assets/img/duration.png" height="40" class="mt-2 center" />
+                        </div>
+                        <div class="col-10">
+                            <b class="text-muted">Durations</b><br>
+                            <small>{{post.Duration}}</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../assets/img/mode-of-training.png" height="40" class="mt-2 center" />
+                        </div>
+                        <div class="col-10">
+                            <b class="text-muted">Mode Of Training</b><br>
+                            <small>{{post.mode_training}}</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../assets/img/appointment.png" height="40" class="mt-2 center" />
+                        </div>
+                        <div class="col-10">
+                            <b class="text-muted">Fees</b><br>
+                            <small>{{post.Fees}}</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="text-muted">Overview</h5>
+                    <ul class="text-light-font">
+                        <li>Develop Credit Card Fraud Detection project in ML</li>
+                        <li>Visualize daily COVID-19 trend using Pandas.</li>
+                        <li>Sign Langauge Detection using Computer Vision</li>
+                        <li>Develop a business centric Chatbot using NLP</li>
+                        <li>Develop Movie Recommender system like Netflix</li>
+                        <li>Stock Market Forecasting using Time series Analysis</li>
+                    </ul>
+                    <div>
+                        <button [routerLink]="['/post',post.course_name]" type="button"
+                            style="background-color:#BAD23B ; color:#343432"
+                            class="btn text-muted btm-outline-danger btn-large">
+                            <b> Course Details </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Post certification program end  -->

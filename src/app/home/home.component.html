@@ -1,0 +1,182 @@
+<div class="row mt-1">
+  <div class="col-12">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../assets/img/banner1.jpg" style="height: 600px;" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/img/banner3.jpeg" style="height: 600px;" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/img/banner6.jpg" style="height: 600px;" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/img/banner8.jpg" style="height: 600px;" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/img/banner9.jpg" style="height: 600px;" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- counter up start -->
+<div class="container mt-5 mb-5">
+  <div class="row ">
+    <div class="col-6 col-lg-3"><br>
+      <div class="card text-center shadow-lg ">
+        <img src="../../assets/img/Training-hours.png" height="100px" class=" center card-img-top mt-4" alt="...">
+        <div class="card-title mb-4">
+          <h5 class="text-muted">65000Hrs </h5>
+          <h6 class="text-muted">Training Conducted</h6>
+        </div>
+      </div>&nbsp;
+    </div>
+    <div class="col-6 col-lg-3"><br>
+      <div class="card text-center shadow-lg ">
+        <img src="../../assets/img/activelearners.png" height="100px" class=" center card-img-top mt-4" alt="...">
+        <div class="card-title mb-4">
+          <h5 class="text-muted">10000+ </h5>
+          <h6 class="text-muted">Student Trained</h6>
+        </div>
+      </div>&nbsp;
+    </div>
+    <div class="col-6 col-lg-3 "><br>
+      <div class="card text-center shadow-lg ">
+        <img src="../../assets/img/tieups.png" height="100px" class=" center card-img-top mt-4" alt="...">
+        <div class="card-title mb-4">
+          <h5 class="text-muted">500+ </h5>
+          <h6 class="text-muted">Hiring Companies</h6>
+        </div>
+      </div>&nbsp;
+    </div>
+    <div class="col-6 col-lg-3 "><br>
+      <div class="card text-center shadow-lg ">
+        <img src="../../assets/img/salarydrawn.png" height="100px" class=" center card-img-top mt-4" alt="...">
+        <div class="card-title mb-4">
+          <h5 class="text-muted">12.5 L.P.A </h5>
+          <h6 class="text-muted">Average Salaries</h6>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+</div>
+<!-- counter up end -->
+
+
+<!-- view courses start -->
+
+<div class="container-fluid" style="background-color: #E8E7E7;">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-muted mt-3 pb-3">Courses</h1>
+    </div>
+  <!-- </div>
+  <div class="container"> -->
+    <div class="row" *ngFor="let course of courses ">
+      <div class="col-12" *ngFor="let master of course.Masters|slice:start_index:end_index">
+        <div class="card mb-5 center shadow-lg" style="width: 70%;">
+          <div class="row g-0 shadow-lg" >
+            <div class="col-12 col-md-6">
+              <img [src]="master.img" style="height: 100%;" class=" img-fluid rounded-start" alt="course">
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card-body">
+                <h5 class="text-center text-muted card-title">{{master.course_name|uppercase}}</h5>
+                <!-- <div class="row">
+                  <div class="col-5 border-right border-dark">
+                    <div class="float-right ">
+                      <b class="text-muted">Durations</b><br>
+                      <small>12 Months</small>
+                    </div>
+                    <div class="float-right me-2 ">
+                      <img src="../../assets/img/duration.png" height="40" class="mt-2" />
+                    </div>
+                  </div>
+
+                  <div class="col-7">
+                  </div>
+                </div> -->
+                <div class="row mb-2">
+                  <div class="col-2">
+                    <img src="../../assets/img/duration.png" height="40" class="mt-2 img-fluid center" />
+                  </div>
+                  <div class="col-10">
+                    <b class="text-muted">Durations</b><br>
+                    <small>{{master.duration}}</small>
+                  </div>
+                </div><hr>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="../../assets/img/mode-of-training.png" height="40" class="mt-2 img-fluid center" />
+                  </div>
+                  <div class="col-10">
+                    <b class="text-muted">Mode Of Training</b><br>
+                    <small>{{master.mode_training}}</small>
+                  </div>
+                </div><hr>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="../../assets/img/appointment.png" height="40" class="mt-2 img-fluid center" />
+                  </div>
+                  <div class="col-10">
+                    <b class="text-muted">Fees</b><br>
+                    <small>{{master.fees}}</small>
+                  </div>
+                </div><hr>
+                <h5 class="text-muted">Overview</h5>
+                <ul class="text-light-font" >
+                  <li>Develop Credit Card Fraud Detection project in ML</li>
+                  <li>Visualize daily COVID-19 trend using Pandas.</li>
+                  <li>Sign Langauge Detection using Computer Vision</li>
+                  <li>Develop a business centric Chatbot using NLP</li>
+                  <li>Develop Movie Recommender system like Netflix</li>
+                  <li>Stock Market Forecasting using Time series Analysis</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-grid justify-content-md-end">
+          <button type="button" [routerLink]="['/course']" 
+          style="background-color: #343432; color:#BAD23B" class="mb-4 btn btn-lg ">Search More Courses</button>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+</div>
+
+<!-- view Courses end  -->
+
+<!-- Our Training Process start -->
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-12">
+      <h2 class="text-muted section-title">Our Training Process</h2>
+    </div>
+    <div class="col-12 mt-5">
+      <img src="../../assets/img/training_process_desktop.png" class="img-fluid pt-3 pb-5" alt="training-process" />
+    </div>
+
+  </div>
+</div>
+
+<!-- Our Training Process end -->
